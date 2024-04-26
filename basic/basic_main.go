@@ -12,9 +12,13 @@ this is comment on second line.
 */
 
 func main() {
-	var variableName1 = "Go data types"
-	variableName2 := "test data"
+	//var <variablename> <datatype> = <value>
+	var variableName1 = "Go data types" //explicitly declared avriable.
+	variableName2 := "test data"        // implcit that means go will infer the type of the varibale when := is used.
+	// %s plain string, %v default format, %T type of the value, %d inetegrs, %f flaoting numbers, %.2f floating up to 2 decimal places.
 
-	fmt.Printf("this will print %T \n", variableName1)
-	fmt.Println("Println does not need any '\n' at the end %s ", variableName2)
+	fmt.Print("this will print:", variableName1, "\n")
+	fmt.Printf("this will print as %T %s \n", variableName1, variableName1)
+	fmt.Println("Println does not need any new line character at the end", variableName2)
+
 }

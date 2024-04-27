@@ -14,6 +14,7 @@ this is comment on second line.
 */
 
 func main() {
+	fmt.Println("the sum of 2 numbers is", add(10, 20)) // calling a function
 	//var <variablename> <datatype> = <value>
 	var variableName1 = "Go data types" //explicitly declared avriable.
 	variableName2 := "test data"        // implcit that means go will infer the type of the varibale when := is used.
@@ -61,5 +62,10 @@ func main() {
 	i, err := strconv.Atoi(s)
 	fmt.Printf("default value for int is %v,%T\n", i, i)
 	fmt.Printf("this is the %v, %T \n", err, err)
+
+}
+
+func add(a int, b int) int {
+	return a + b
 
 }

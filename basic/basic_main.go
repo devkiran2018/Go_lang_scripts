@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt" // format package for all print functionality.
+	"reflect"
+	"strconv"
 )
 
 // where to start the program? where is the entry point? -> starts from mian() function
@@ -33,8 +35,7 @@ func main() {
 	fmt.Printf("this will print as %T %s \n", variableName1, variableName1)
 	fmt.Println("Println does not need any new line character at the end", variableName2)
 	var name string
-
-	fmt.Scanf("%s", &name)
+	//fmt.Scanf("%s", &name)
 	fmt.Print("this will print scanf ", name, "\n")
 	fmt.Print("input the values for a_input,  binput:", "\n")
 	// var (
@@ -46,4 +47,19 @@ func main() {
 	//type of variable %T
 	var name_type string = "test1"
 	fmt.Printf("name_type= %v is of type %T", name_type, name_type)
+	fmt.Printf("type: %v \n", reflect.TypeOf(10))
+
+	var i int = 10
+	var f float64 = float64(i)
+
+	fmt.Printf("%.2f \n", f) // outputs as 10.00
+	// string conversion package for string to int or int to string
+	// Atoi(), Itoa()
+	var s string = strconv.Itoa(i)
+	fmt.Printf("%q \n", s)
+	s = "10a"
+	i, err := strconv.Atoi(s)
+	fmt.Printf("default value for int is %v,%T\n", i, i)
+	fmt.Printf("this is the %v, %T \n", err, err)
+
 }

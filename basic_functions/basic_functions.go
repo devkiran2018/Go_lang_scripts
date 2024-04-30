@@ -79,4 +79,4 @@ func printDetails(student string, subjects ...string) {
 // They can accept inputs and return outputs, just as standard functions do. used for short-term use.
 
 // high order functions : function that receives a function as an argument or returns a function as output.
-//Composition,  Reduces bugs, Code gets easier to read and understand.
+//uses: Composition,  Reduces bugs, Code gets easier to read and understand.
